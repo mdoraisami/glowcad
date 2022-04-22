@@ -1,0 +1,103 @@
+Column Header,Column Description,Data Type,Measurement,Options
+unique.id,Unique id value of C content entry,Number,,
+reference.number,"Number corresponding to publication under ""References"" tab",Number,,
+year,Year of original publication,Year,,
+division,Plant Type,Categorical,Binary,Angiosperm/Gymnosperm
+family.publication,Plant Family based on original publication,Categorical,Name,
+genus.publication,Plant Genus as listed in original publication,Categorical,Name,
+binomial.publication,Plant Binomial as listed in original publication,Unique name,Name,
+family.resolved,Plant Family based on accepted binomial nomenclature,Categorical,Name,
+genus.resolved,Plant Genus based on accepted binomial nomenclature,Categorical,Name,
+binomial.resolved,Plant Binomial based on accepted binomial nomenclature,Unique name,Name,
+growth.form,Plant Growth Form,Categorical,Nominal,"""Shrub""/""Shrub/Tree""/""Tree""/""NA"""
+tissue,Specified tissue type measured for C,Categorical,Position,Bark/Branch/Coarseroot/Fineroot/Heartwood/Root/Sapwood/Stem/Twig
+position,Position of wood declared in orginal publication,Categorical,Position,Downed/Standing/Standing_Downed
+dead.alive,Wood mortality state,Categorical,Binary,Dead/Alive
+decay.class,Decay class in original publication,Ordinal,Class,1/2/3/4/5/1-2/4-5/all/Live/not specified
+cwd.diameter,CWD diameter in original publication,Continuous,Centimeter,0.13 cm - 50+ cm/NA/not specified
+cwd.length,CWD length in original publication,Continuous,Centimeter,20 cm - 300+ cm/NA/not specified
+tissue.c,Tissue C concentration,Continuous,Percent,18.35-75.12
+variation.tissue.c,Variation in wood C concentration (%),Continuous,Proportion,0-55/NA
+volatile.c,Wood volatile C concentration,Continuous,Proportion,0-7.5/NA
+variation.volatile.c,Variation in wood volatile C concentration (%),Continuous,Proportion,0-2.81/NA
+drying.method,Drying method employed ,Categorical,Nominal,conventional_drying/freeze-drying/MLC_drying/vacuum_desiccation/NA
+drying.temperature.avg,Average temperature at which samples were dried,Continuous,Degrees Celsius,
+drying.duration.hrs,Average amount of time sample was dried for,Categorical,Hours,
+analytical.instrument,Instrument used to measure C concentration,Categorical,Nominal,
+sample.handling,Preparation techniques used on samples,Categorical,Nominal,
+biome,Biome of original study location,Categorical,Nominal,Boreal/Subtropical_Mediterranean/Temperate/Tropical
+biome.whittaker,Biome of original study location translated into Wittaker biomes,Categorical,Nominal,Boreal_Forest/Temperate_Grassland.Desert/Temperate_Rain_Forest/Temperate_Seasonal_Forest/Tropical_Rain_Forest/Tropical_seasonal_Forest.Savanna/Woodland.Shrubland/NA
+region,Oceanic/Continental Region,Categorical,Nominal,Africa/Asia/Central_America/Eurasia/Europe/North_American/Oceania/South_America/Undefined
+country,Country of original study,Categorical,Nominal,Argentina/Australia/Belgium/Bolivia/Brazil/Canada/Chile/China/Costa_Rica/Dominica/Estonia/Ethiopia/Finland/Frence/Germany/Ghana/Italy/Iran/India/Japan/Kenya/Korea/Latvia/Mexica/New_Zealand/Panama/Phillipines/Poland/Portugal/Russia/South_Korea/Spain/Sweden/Switzerland/Thailand/Turkey/Uganda/USA/Undefined
+latitude,Latitude of original study,Continuous,Decimal Degrees,
+longitude,Longitude of original study,Continuous,Decimal Degrees,
+latitude.r,Standardized Latitude for use in R,Continuous,Decimal Degrees,
+longitude.r,Standardized longitude for use in R,Continuous,Decimal Degrees,
+mat.pub,Mean Annual Temperature in original publication,Continuous,Degrees Celsius,
+map.pub,Mean Annual Precipitation in original publication,Continuous,Millimeters,
+elev,Elevation,Continuous,Metres Above Sea Level,
+bio.MAT,Mean Annual Temperature,Continuous,Degrees Celsius,"""bio."" signifies bioclimatic variables typical of study region retrieved from WorldClim database, reported at the lowest scale (0.5 mins) (retrieved from https://worldclim.org/data/bioclim.html)"
+bio.MAP,Mean Annual Precipitation,Continuous,Millimeters,
+bio.MDR,Mean Diurnal Range,Continuous,Degrees Celsius,
+bio.isothermality,Daily temperature oscillation relative to annual temperature range,Continuous,Percent,
+bio.temp_seasonality,Seasonal temperature oscillation,Continuous,Percent,
+bio.maxtemp,Maximum Annual Temperature,Continuous,Degrees Celsius,
+bio.mintemp,Minimum Annual Temperature,Continuous,Degrees Celsius,
+bio.temp_annual_range,Annual temperature range ,Continuous,Degrees Celsius,
+bio.mean_temp_wettest_quarter,Average temperature in wettest three month period,Continuous,Degrees Celsius,"""Quarter"" is a period of three consecutive months (1/4 of a year)"
+bio.mean_temp_driest_quarter,Average temperature in driest three month period,Continuous,Degrees Celsius,
+bio.mean_temp_warmest_quarter,Average temperature in warmest three month period,Continuous,Degrees Celsius,
+bio.mean_temp_coldest_quarter,Average temperature in coldest three month period,Continuous,Degrees Celsius,
+bio.prec_wettest_month,Average precipitation received in wettest month,Continuous,Millimeters,
+bio.prec_driest_month,Average precipitation received in driest month,Continuous,Millimeters,
+bio.prec_seasonality,Variation of precipitation through seasons ,Continuous,Percent,
+bio.prec_wettest_quarter,Average precipitation in wettest three month period,Continuous,Millimeters,
+bio.prec_driest_quarter,Average precipitation in driest three month period,Continuous,Millimeters,
+bio.prec_warmest_quarter,Average precipitation in warmest three month period,Continuous,Millimeters,
+bio.prec_coldest_quarter,Average precipitation in coldest three month period,Continuous,Millimeters,
+temp.Jan,January climate-normal average temperature,Continuous,Degrees Celsius,
+temp.Feb,February climate-normal average temperature,Continuous,Degrees Celsius,
+temp.Mar,March climate-normal average temperature,Continuous,Degrees Celsius,
+temp.Apr,April climate-normal average temperature,Continuous,Degrees Celsius,
+temp.May,May climate-normal average temperature,Continuous,Degrees Celsius,
+temp.Jun,June climate-normal average temperature,Continuous,Degrees Celsius,
+temp.Jul,July climate-normal average temperature,Continuous,Degrees Celsius,
+temp.Aug,August climate-normal average temperature,Continuous,Degrees Celsius,
+temp.Sep,September climate-normal average temperature,Continuous,Degrees Celsius,
+temp.Oct,October climate-normal average temperature,Continuous,Degrees Celsius,
+temp.Nov,November climate-normal average temperature,Continuous,Degrees Celsius,
+temp.Dec,December climate-normal average temperature,Continuous,Degrees Celsius,
+prec.Jan,January climate-normal total precipitation,Continuous,Millimeters,
+prec.Feb,February climate-normal total precipitation,Continuous,Millimeters,
+prec.Mar,March climate-normal total precipitation,Continuous,Millimeters,
+prec.Apr,April climate-normal total precipitation,Continuous,Millimeters,
+prec.May,May climate-normal total precipitation,Continuous,Millimeters,
+prec.Jun,June climate-normal total precipitation,Continuous,Millimeters,
+prec.Jul,July climate-normal total precipitation,Continuous,Millimeters,
+prec.Aug,August climate-normal total precipitation,Continuous,Millimeters,
+prec.Sep,September climate-normal total precipitation,Continuous,Millimeters,
+prec.Oct,October climate-normal total precipitation,Continuous,Millimeters,
+prec.Nov,November climate-normal total precipitation,Continuous,Millimeters,
+prec.Dec,December climate-normal total precipitation,Continuous,Millimeters,
+compilation,Location of stored data,Categorical,Location,
+notes,Additional information,Notes,Notes,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
